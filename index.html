@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website thử nghiệm khi học học phần Thiết kế Web của lớp CNTTT1165">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Design, CNTT1165, NEU">
+    <meta name="author" content="Khoa Công nghệ thông tin - Trường Công nghệ - Đại học Kinh tế Quốc dân">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Trang chủ | Website của lớp CNTT1165</title>
+    <script>
+        //Yêu cầu người dùng nhập họ tên
+        var ho_ten=window.prompt("Bạn tên gì?")
+         //Xử lý lời chào mừng
+    var loi_chao_mung=" Chào bạn "+ho_ten+" chào mừng đến với trang của tui "
+    window.confirm(loi_chao_mung);
+    console.log(loi_chao_mung);
+    
+    //Xu ly ngay thang
+    const date= new Date();
+    const gio = date.getHours();
+    const phut =date.getMinutes();
+    const giay = date.getSeconds();
+    const ngay =date.getDate();
+    const thang =date.getMonth()+1;
+    const nam= date.getFullYear();
+    console.log(gio+" Giờ "+phut+" Phút "+giay+ " Giây");
+    console.log( " Ngày "+ngay+" Tháng "+thang+ " Năm "+nam);
+
+    </script>
+</head>
+<body>
+    <!-- 
+        Mục đích: Nôị dung hiển thị trên TRANG CHỦ
+        Tác giả: Nguyễn Văn A
+        Liên hệ: nguyenvana@gmail.com
+    -->
+    <!-- Đoạn menu trang Web-->
+    <p style="text-align: right; font-weight: bold; color:brown">
+        <a href="./index.html">Trang chủ</a> | <a href="./gioi_thieu.html">Giới thiệu</a> | <a href="./tin_tuc.html">Tin tức</a> | <a href="./san_pham.html">Sản phẩm</a> | <a href="./lien_he.html">Liên hệ</a> | <a href="./dang_nhap.html">Đăng nhập</a>
+    </p>
+
+    <!-- Đoạn tiêu đề của trang Web -->
+    <h1 style="text-align: center; color: red;">TRANG CHỦ</h1>
+
+    <!-- Đoạn nội dung mô tả -->
+    <p>Chào mừng các bạn đến với Website của lớp CNTT1165. Đây là trang chủ của lớp. Xấu thật nhưng thôi, mới bắt đầu mà.</p>
+    <p style="text-align: center;">
+        <a href="./tin_tuc_chi_tiet.html" title="Nội dung chi tiết của bài viết Chào mừng ...">
+            <img src="./img/Tesla.png" style="width: 800px; height: auto;" />
+        </a>
+    </p>
+
+    <!-- Đoạn chân trang Web -->
+    <hr />
+    <p style="color:brown; text-align: right; font-style: italic;">Bản quyền thuộc về: <a href="https://cntt1165.github.io" target="_blank">Lớp CNTT1165</a>, <a href="https://neu.edu.vn/" target="_blank">Đại học Kinh tế Quốc dân</a></p>
+</body>
+</html>
